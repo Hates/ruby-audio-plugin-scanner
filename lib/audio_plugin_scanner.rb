@@ -1,7 +1,4 @@
-#!/usr/bin/env ruby
-
 require 'pathname'
-require 'optparse'
 
 class AudioPluginScanner
   def initialize
@@ -225,41 +222,4 @@ class AudioPluginScanner
       puts "\nNo #{plugin_type} plugins found."
     end
   end
-end
-
-def main
-  options = {}
-  
-  OptionParser.new do |opts|
-    opts.banner = "Usage: #{$0} [options]"
-    
-    opts.on('-d', '--detailed', 'Show detailed information including paths') do
-      options[:detailed] = true
-    end
-    
-    opts.on('-t', '--type TYPE', ['au', 'vst', 'vst3', 'aax'], 
-            'Show only plugins of specified type (au, vst, vst3, aax)') do |type|
-      options[:type] = type
-    end
-    
-    opts.on('-h', '--help', 'Show this help message') do
-      puts opts
-      exit
-    end
-  end.parse!
-
-  scanner = AudioPluginScanner.new
-  plugins = scanner.scan_all_plugins
-
-  if options[:type]
-    scanner.print_by_type(plugins, options[:type])
-  elsif options[:detailed]
-    scanner.print_detailed(plugins)
-  else
-    scanner.print_summary(plugins)
-  end
-end
-
-if __FILE__ == $0
-  main
 end
