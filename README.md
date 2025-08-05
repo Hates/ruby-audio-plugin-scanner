@@ -143,6 +143,21 @@ The main scanner logic is in `lib/audio_plugin_scanner.rb`. The executable in `b
 
 This project is open source. Feel free to use, modify, and distribute.
 
+## About This Project
+
+This audio plugin scanner was built collaboratively with [Claude Code](https://claude.ai/code), Anthropic's AI coding assistant. The development process showcased how AI can help create well-structured, functional command-line tools by:
+
+- **Iterative Development**: Starting with a simple concept and evolving through user feedback
+- **Ruby Best Practices**: Implementing proper project structure with `lib/` and `bin/` directories
+- **Comprehensive Features**: Building from basic scanning to consolidated views and detailed path reporting
+- **Documentation**: Creating thorough README documentation and inline code comments
+
+The scanner demonstrates practical Ruby programming techniques including file system traversal, data consolidation, command-line argument parsing, and clean object-oriented design.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.
+
+---
+
+*🤖 Generated with [Claude Code](https://claude.ai/code)*
