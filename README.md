@@ -2,6 +2,8 @@
 
 A Ruby command-line tool that scans and lists all installed audio plugins on macOS systems. Supports AU Components, VST, VST3, and AAX plugin formats with consolidated views and detailed path information.
 
+> 🤖 This project was generated with the help of [Claude Code](https://claude.ai/code)
+
 ## Features
 
 - **Comprehensive Plugin Detection**: Scans all major audio plugin formats
@@ -157,7 +159,3 @@ The scanner demonstrates practical Ruby programming techniques including file sy
 ## Contributing
 
 Contributions are welcome! Please feel free to submit issues and pull requests.
-
----
-
-*🤖 Generated with [Claude Code](https://claude.ai/code)*
